@@ -1,9 +1,9 @@
 export default function Home() {
   return (
     <>
-      {/* navbar search*/}
-      {/* navbar login*/}
       {/* create community */}
+      <h1>create community</h1>
+
       {/* general feed */}
       {/* custom feed */}
     </>
