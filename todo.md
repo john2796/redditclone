@@ -1,0 +1,23 @@
+# Build and Deploy a Fullstack Reddit Clone: Next.js 13, React, Tailwind, Auth, Prisma, MySQL
+
+- [ ] Building the Navbar
+- [ ] Authentication
+- [ ] Building a user-profile menu
+- [ ] Perfecting the authentication flow
+- [ ] Database modeling
+- [ ] Creating subreddits
+- [ ] Subreddit detail page
+- [ ] Joining and leaving subreddits
+- [ ] Creating posts (editor, image upload)
+- [ ] Displaying posts in a feed & infinite scrolling
+- [ ] Voting for posts
+- [ ] Advanced caching: Optimizing post performance
+- [ ] Creating an API for infinite scrolling
+- [ ] Custom feeds for logged in & logged out users
+- [ ] Creating a performance-optimized post detail page
+- [ ] Creating the comments section
+- [ ] Voting for comments
+- [ ] Replying to comments
+- [ ] Creating the search bar
+- [ ] Letting users change their username
+- [ ] Deployment to Vercel
