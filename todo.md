@@ -1,6 +1,7 @@
 # Build and Deploy a Fullstack Reddit Clone: Next.js 13, React, Tailwind, Auth, Prisma, MySQL
 
-- [ ] Building the Navbar
+- [x] Building the Navbar
+- [ ] login/logout popup pages
 - [ ] Authentication
 - [ ] Building a user-profile menu
 - [ ] Perfecting the authentication flow
