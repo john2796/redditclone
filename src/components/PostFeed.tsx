@@ -33,7 +33,6 @@ const PostFeed: FC<PostFeedProps> = ({ initialPosts, subredditName }) => {
       const { data } = await axios.get(query)
       return data as ExtendedPost[]
     },
-
     {
       getNextPageParam: (_, pages) => {
         return pages.length + 1
