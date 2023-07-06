@@ -2,6 +2,9 @@ import { formatTimeToNow } from '@/lib/utils'
 import { Post, Vote, User } from '@prisma/client'
 import { FC, useRef } from 'react'
 import PostVoteClient from './PostVoteClient'
+import EditorOutput from './EditorOutput'
+import Link from 'next/link'
+import { MessageSquare } from 'lucide-react'
 
 type PartialVote = Pick<Vote, 'type'>
 
@@ -55,7 +58,26 @@ const Post: FC<PostProps> = ({
               {post.title}
             </h1>
           </a>
+
+          <div
+            className="relative text-sm max-h-40 w-full overflow-clip"
+            ref={pRef}
+          >
+            <EditorOutput content={post.content} />
+            {pRef.current?.clientHeight === 160 && (
+              // blur bottom if content is too long
+              <div className="absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-white to-transparent"></div>
+            )}
+          </div>
         </div>
+      </div>
+      <div className="bg-gray-50 z-20 text-sm px-4 py-4 sm:px-6">
+        <Link
+          href={`/r/${subredditName}/post/${post.id}`}
+          className="w-fit flex items-center gap-2"
+        >
+          <MessageSquare className="h-4 w-4" /> {commentAmt} comments
+        </Link>
       </div>
     </div>
   )
