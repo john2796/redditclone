@@ -8,7 +8,7 @@ import { useMutation } from '@tanstack/react-query'
 import axios, { AxiosError } from 'axios'
 import { useEffect, useState } from 'react'
 import { toast } from '@/hooks/use-toast'
-import { Button } from './ui/Button'
+import { Button } from '../ui/Button'
 import { ArrowBigDown, ArrowBigUp } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -39,7 +39,6 @@ const PostVoteClient = ({
         voteType: type,
         postId: postId
       }
-
       await axios.patch('/api/subreddit/post/vote', payload)
     },
     onError: (err, voteType) => {
@@ -56,7 +55,7 @@ const PostVoteClient = ({
       }
 
       return toast({
-        title: 'Something went wrong.',
+        title: 'Something wen wrong.',
         description: 'Your vote was not registered. Please try again.',
         variant: 'destructive'
       })
@@ -68,7 +67,7 @@ const PostVoteClient = ({
         if (type === 'UP') setVotesAmt((prev) => prev - 1)
         else if (type === 'DOWN') setVotesAmt((prev) => prev + 1)
       } else {
-        // User is voting in the opposite direction, so subtract 2
+        // User is voting in the opposite direction so subtract 2
         setCurrentVote(type)
         if (type === 'UP') setVotesAmt((prev) => prev + (currentVote ? 2 : 1))
         else if (type === 'DOWN')
