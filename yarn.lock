@@ -221,7 +221,7 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@mantine/hooks@^6.0.17":
+"@mantine/hooks@^6.0.13":
   version "6.0.17"
   resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-6.0.17.tgz#dc942c87e6dcfa14a70e4e4a162c22eeb4ff3724"
   integrity sha512-7vf2w1NlzKlUynSuyI2DAIKoEOYKYC8k+tlSsk3BRdbzhbJAiWxcYzJy5seg5dFW1WIpKAZ0wiVdHXf/WRlRgg==
@@ -917,16 +917,16 @@
   resolved "https://registry.npmjs.org/@uploadthing/mime-types/-/mime-types-0.2.0.tgz"
   integrity sha512-nRcdyM622+GYT9SdaJIVLknqoc8i7krItinfuBPtvmPc+UNGDJ+pMkr4AatYp88cEc4iYtPlN8flJvZ3dNtgrg==
 
-"@uploadthing/react@^4.0.0":
-  version "4.1.3"
-  resolved "https://registry.npmjs.org/@uploadthing/react/-/react-4.1.3.tgz"
-  integrity sha512-PG463gGyFnvaBhG5tf7rLDUQb9WDbHPzcV/1EGvrkli4LoMHtBXmTeD9WujwopJ4LjyVuXLh4hgYm7ZJlMlThQ==
+"@uploadthing/react@^5.0.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@uploadthing/react/-/react-5.2.0.tgz#1951076c5324b85f0392ae256ed53fab2791590a"
+  integrity sha512-kVM/3JZJhMgk2QGvyhyqPA5Zycq9TaqgCg/MNWvWDSgzw5MKeMyiXsEAJEQ7jO1BBjAfZ0O0NCM0VXCXuMLkPQ==
   dependencies:
-    "@uploadthing/shared" "^5.0.0"
+    "@uploadthing/shared" "^5.1.0"
 
-"@uploadthing/shared@^5.0.0":
+"@uploadthing/shared@^5.0.0", "@uploadthing/shared@^5.1.0":
   version "5.1.0"
-  resolved "https://registry.npmjs.org/@uploadthing/shared/-/shared-5.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/@uploadthing/shared/-/shared-5.1.0.tgz#aa116e4e022c2876ea716e0dd22c60ee70f78db5"
   integrity sha512-3pt9PFN0QuAvCv2LZyC66Bcn+zDUbh8Ws3noYHIlr2BFIvsH0zs2oVG+WXhb+9Nunu8+DER6iol7frza5rldIA==
 
 "@upstash/redis@^1.21.0":
