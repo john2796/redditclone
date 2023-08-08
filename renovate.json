@@ -1,4 +1,13 @@
 {
-  "extends": ["config:base"],
-  "group": "all"
+  "extends": [
+    ":preserveSemverRanges",
+    "group:all",
+    "schedule:monthly",
+    ":maintainLockFilesMonthly"
+  ],
+  "lockFileMaintenance": {
+    "commitMessageAction": "Update",
+    "extends": ["group:all"]
+  },
+  "separateMajorMinor": false
 }
