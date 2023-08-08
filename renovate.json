@@ -1,9 +1,11 @@
 {
   "extends": ["config:base"],
   "schedule": ["every 1st day of the month at 12am"],
-  "automerge": true,
+  "automerge": false,
   "autodiscover": true,
-  "group": "monthly-bulk",
+  "group": {
+    "groupName": "monthly-bulk"
+  },
   "labels": ["dependencies"],
   "commitMessagePrefix": "chore(deps): update",
   "commitMessageTopic": "Monthly updates"
