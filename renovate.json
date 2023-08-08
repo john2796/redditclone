@@ -3,8 +3,9 @@
   "schedule": ["every 1st day of the month at 12am"],
   "automerge": false,
   "autodiscover": true,
-  "group": {
-    "groupName": "monthly-bulk"
-  },
-  "labels": ["dependencies"]
+  "dedupe": {
+    "enabled": true,
+    "group": "all-dependencies",
+    "commitMessage": "chore(deps): update all dependencies"
+  }
 }
