@@ -1,12 +1,10 @@
 {
   "extends": ["config:base"],
   "schedule": ["every 1st day of the month at 12am"],
-  "packageRules": [
-    {
-      "matchPackageNames": ["nodejs"],
-      "labels": ["dependencies"],
-      "commitMessagePrefix": "chore(deps): update",
-      "commitMessageTopic": "Dependency update"
-    }
-  ]
+  "automerge": true,
+  "autodiscover": true,
+  "group": "monthly-bulk",
+  "labels": ["dependencies"],
+  "commitMessagePrefix": "chore(deps): update",
+  "commitMessageTopic": "Monthly updates"
 }
