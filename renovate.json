@@ -1,11 +1,16 @@
 {
-  "extends": ["config:base"],
-  "schedule": ["every 1st day of the month at 12am"],
-  "automerge": false,
-  "autodiscover": true,
-  "dedupe": {
-    "enabled": true,
-    "group": "all-dependencies",
-    "commitMessage": "chore(deps): update all dependencies"
-  }
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": ["main"],
+  "onboarding": true,
+  "onboardingBranch": "renovate/configure",
+  "defaultBase": "renovate/configure",
+  "prCreation": "immediate",
+  "ignoreDeps": ["renovate"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["*"],
+      "groupName": "all-dependencies",
+      "commitMessageTopic": "All Dependency Updates"
+    }
+  ]
 }
