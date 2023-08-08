@@ -1,13 +1,11 @@
 {
   "extends": [
-    ":preserveSemverRanges",
-    "group:all",
-    "schedule:monthly",
-    ":maintainLockFilesMonthly"
-  ],
-  "lockFileMaintenance": {
-    "commitMessageAction": "Update",
-    "extends": ["group:all"]
-  },
-  "separateMajorMinor": false
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":ignoreModulesAndTests",
+    "group:monorepos",
+    "group:recommended",
+    "replacements:all",
+    "workarounds:all"
+  ]
 }
