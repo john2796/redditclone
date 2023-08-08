@@ -6,7 +6,5 @@
   "group": {
     "groupName": "monthly-bulk"
   },
-  "labels": ["dependencies"],
-  "commitMessagePrefix": "chore(deps): update",
-  "commitMessageTopic": "Monthly updates"
+  "labels": ["dependencies"]
 }
