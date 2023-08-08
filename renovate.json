@@ -4,7 +4,6 @@
   "packageRules": [
     {
       "matchPackageNames": ["nodejs"],
-      "automerge": false,
       "group": "monthly-dependency-update",
       "labels": ["dependencies"],
       "commitMessagePrefix": "chore(deps): update",
