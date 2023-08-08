@@ -1,6 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "schedule": ["every weekend"],
+  "prHour": 12,
+  "prTimezone": "UTC",
+  "group": "all",
+  "autodiscover": true,
+  "packageRules": [
+    {
+      "matchPackageNames": ["^node$"],
+      "automerge": false,
+      "group": "monthly-node-update",
+      "labels": ["dependencies"]
+    }
   ]
 }
