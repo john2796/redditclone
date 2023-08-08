@@ -1,17 +1,14 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "schedule": ["every weekend"],
-  "prHour": 12,
-  "prTimezone": "UTC",
-  "group": "all",
-  "autodiscover": true,
+  "schedule": ["every 1st day of the month at 12am"],
   "packageRules": [
     {
-      "matchPackageNames": ["^node$"],
+      "matchPackageNames": ["nodejs"],
       "automerge": false,
-      "group": "monthly-node-update",
-      "labels": ["dependencies"]
+      "group": "monthly-dependency-update",
+      "labels": ["dependencies"],
+      "commitMessagePrefix": "chore(deps): update",
+      "commitMessageTopic": "Dependency update"
     }
   ]
 }
